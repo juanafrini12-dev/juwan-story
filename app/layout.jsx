@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
       <head>
         <script
           type="text/javascript"
-          src="https://pl29470146.effectiveratecpm.com/..."
+          src="https://pl29470146.effectiveratecpm.com/abc123xyz.js"
         ></script>
       </head>
 
