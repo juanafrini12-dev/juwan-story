@@ -140,6 +140,12 @@ export default function Home() {
       </div>
     </div>
   );
-}<script src="https://pl29470146.effectivecpmnetwork.com/82/28/d5/8228d520aa317c3e6187d50fbe29c9e8.js"></script>
+}
 
-<scr
+<script type="text/javascript">
+
+<script src="https://pl29470146.effectivecpmnetwork.com/82/28/d5/8228d520aa317c3e6187d50fbe29c9e8.js"></script>
+
+</script>
+
+
