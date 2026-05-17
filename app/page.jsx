@@ -2,21 +2,21 @@ export default function Home() {
   const apps = [
     {
       name: "VPN Fast Pro",
-      image: "https://via.placeholder.com/300x170.png?text=VPN+Fast+Pro",
+      image:"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
       description: "أفضل تطبيق VPN سريع وآمن لتغيير موقعك وحماية اتصالك.",
       downloads: "12K",
       link: "#"
     },
     {
       name: "Game Booster X",
-      image: "https://via.placeholder.com/300x170.png?text=Game+Booster+X",
+      image:"https://images.unsplash.com/photo-1542751110-97427bbecf20",
       description: "تسريع الألعاب وتحسين أداء الهاتف للألعاب الثقيلة.",
       downloads: "8K",
       link: "#"
     },
     {
       name: "Ultra Cleaner",
-      image: "https://via.placeholder.com/300x170.png?text=Ultra+Cleaner",
+      image:"https://images.unsplash.com/photo-1518770660439-4636190af475",
       description: "تنظيف الهاتف وتسريع النظام بضغطه واحدة.",
       downloads: "15K",
       link: "#"
