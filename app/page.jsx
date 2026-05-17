@@ -1,68 +1,142 @@
 export default function Home() {
+  const apps = [
+    {
+      name: "VPN Fast Pro",
+      image: "https://via.placeholder.com/300x170.png?text=VPN+Fast+Pro",
+      description: "أفضل تطبيق VPN سريع وآمن لتغيير موقعك وحماية اتصالك.",
+      downloads: "12K",
+      link: "#"
+    },
+    {
+      name: "Game Booster X",
+      image: "https://via.placeholder.com/300x170.png?text=Game+Booster+X",
+      description: "تسريع الألعاب وتحسين أداء الهاتف للألعاب الثقيلة.",
+      downloads: "8K",
+      link: "#"
+    },
+    {
+      name: "Ultra Cleaner",
+      image: "https://via.placeholder.com/300x170.png?text=Ultra+Cleaner",
+      description: "تنظيف الهاتف وتسريع النظام بضغطه واحدة.",
+      downloads: "15K",
+      link: "#"
+    }
+  ];
+
   return (
     <div style={{
-      background: '#000',
-      color: 'white',
-      minHeight: '100vh',
-      fontFamily: 'sans-serif',
-      padding: '40px',
-      textAlign: 'center'
+      background: "#0a0a0a",
+      minHeight: "100vh",
+      color: "white",
+      fontFamily: "sans-serif",
+      padding: "30px"
     }}>
       <h1 style={{
-        fontSize: '60px',
-        color: '#22c55e'
+        textAlign: "center",
+        color: "#22c55e",
+        fontSize: "55px"
       }}>
         Juwan Store
       </h1>
 
       <p style={{
-        fontSize: '22px',
-        color: '#aaa',
-        marginTop: '20px'
+        textAlign: "center",
+        color: "#aaa",
+        fontSize: "20px",
+        marginBottom: "40px"
       }}>
         أفضل متجر لتحميل التطبيقات والبرامج
       </p>
 
-      <div style={{
-        marginTop: '50px',
-        display: 'grid',
-        gap: '20px'
-      }}>
-        <div style={{
-          background: '#111',
-          padding: '25px',
-          borderRadius: '20px'
-        }}>
-          <h2>VPN Fast Pro</h2>
-          <button style={{
-            background: '#22c55e',
-            color: 'black',
-            padding: '12px 25px',
-            border: 'none',
-            borderRadius: '12px',
-            fontWeight: 'bold'
-          }}>
-            تحميل التطبيق
-          </button>
-        </div>
+      <input
+        placeholder="ابحث عن تطبيق..."
+        style={{
+          width: "100%",
+          padding: "15px",
+          borderRadius: "12px",
+          border: "none",
+          marginBottom: "35px",
+          fontSize: "18px",
+          background: "#1a1a1a",
+          color: "white"
+        }}
+      />
 
-        <div style={{
-          background: '#111',
-          padding: '25px',
-          borderRadius: '20px'
-        }}>
-          <h2>Game Booster X</h2>
-          <button style={{
-            background: '#22c55e',
-            color: 'black',
-            padding: '12px 25px',
-            border: 'none',
-            borderRadius: '12px',
-            fontWeight: 'bold'
-          }}>
-            تحميل التطبيق
-          </button>
-        </div>
+      <div style={{
+        display: "grid",
+        gap: "25px"
+      }}>
+        {apps.map((app, index) => (
+          <div
+            key={index}
+            style={{
+              background: "#111",
+              borderRadius: "20px",
+              overflow: "hidden",
+              border: "1px solid #222"
+            }}
+          >
+            <img
+              src={app.image}
+              alt={app.name}
+              style={{
+                width: "100%"
+              }}
+            />
+
+            <div style={{
+              padding: "20px"
+            }}>
+              <h2>{app.name}</h2>
+
+              <p style={{
+                color: "#aaa",
+                lineHeight: "1.7"
+              }}>
+                {app.description}
+              </p>
+
+              <p style={{
+                color: "#22c55e",
+                marginTop: "10px"
+              }}>
+                عدد التحميلات: {app.downloads}
+              </p>
+
+              <div style={{
+                display: "flex",
+                gap: "15px",
+                marginTop: "20px"
+              }}>
+                <a
+                  href={app.link}
+                  style={{
+                    background: "#22c55e",
+                    color: "black",
+                    padding: "12px 20px",
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontWeight: "bold"
+                  }}
+                >
+                  تحميل التطبيق
+                </a>
+
+                <button
+                  style={{
+                    background: "#222",
+                    color: "white",
+                    border: "none",
+                    padding: "12px 20px",
+                    borderRadius: "10px"
+                  }}
+                >
+                  التفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
